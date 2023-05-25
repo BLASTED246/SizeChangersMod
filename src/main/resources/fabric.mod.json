@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sizechanger",
+  "version": "${version}",
+
+  "name": "Size Changers",
+  "description": "Some Devices That Allow You To Changer Your Size",
+  "authors": [
+    "BLASTED246"
+  ],
+  "contact": {
+    "homepage": "https://www.youtube.com/channel/UCWa-tS5WQr5VtprS9ZAgyQA",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.blasted246.sizechanger.SizeChanger"
+    ],
+    "client": [
+      "net.blasted246.sizechanger.SizeChangerClient"
+    ]
+  },
+  "mixins": [
+    "SizeChanger.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
